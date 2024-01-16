@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script defer src="scripts/counter.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="images/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adelie Penguins</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="page2" href="page2.html">
+</head>
+<body class="dark-mode">
+  <div id="app">
+    <div>
+      <h2>Current date and time:</h2>
+      <span id="datetime"></span>
+    </div>
+    <div>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+        target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" class="logo content" viewBox="0 0 362.734 512">
+  <path fill="#E44D26" d="M107.644 470.877 74.633 100.62h362.734l-33.046 370.199L255.778 512z"/>
+  <path fill="#F16529" d="m256 480.523 120.03-33.277 28.24-316.352H256z"/>
+  <path fill="#EBEBEB" d="M256 268.217h-60.09l-4.15-46.501H256v-45.411H142.132l1.087 12.183 11.161 125.139H256zM256 386.153l-.199.053-50.574-13.656-3.233-36.217h-45.585l6.362 71.301 93.02 25.823.209-.058z"/>
+  <path d="M108.382 0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0zM205.994 22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896zM259.511 0h24.063l14.802 24.26L313.163 0h24.072v69.044h-22.982V34.822l-15.877 24.549h-.397l-15.888-24.549v34.222h-22.58V0zM348.72 0h23.084v46.222h32.453v22.822H348.72V0z"/>
+  <path fill="#FFF" d="M255.843 268.217v45.41h55.918l-5.271 58.894-50.647 13.67v47.244l93.094-25.801.683-7.672 10.671-119.551 1.108-12.194h-12.237zM255.843 176.305V221.716h109.688l.911-10.207 2.069-23.021 1.086-12.183z"/>
+</svg>
+      </a>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" class="logo presentation" viewBox="0 0 362.734 512">
+          <path d="m437.367 100.62-33.046 370.199L255.778 512l-148.134-41.123L74.633 100.62z" style="fill:#264de4" transform="translate(-74.633)"/>
+          <path d="m376.03 447.246 28.24-316.352H256v349.629z" style="fill:#2965f1" transform="translate(-74.633)"/>
+          <path d="m150.31 268.217 4.07 45.41H256v-45.41zM256 176.305H142.132l4.128 45.411H256zM256 433.399v-47.246l-.199.053-50.574-13.656-3.233-36.217h-45.585l6.362 71.301 93.02 25.823z" style="fill:#ebebeb" transform="translate(-74.633)"/>
+          <path d="M85.367 0h55v23h-32v23h32v23h-55zM151.367 0h55v20h-32v4h32v46h-55V49h32v-4h-32zM217.367 0h55v20h-32v4h32v46h-55V49h32v-4h-32z"/>
+          <path d="m311.761 313.627-5.271 58.894-50.647 13.67v47.244l93.094-25.801.683-7.672 10.671-119.551 1.108-12.194 8.198-91.912H255.843v45.411h63.988l-4.132 46.501h-59.856v45.41z" style="fill:#fff" transform="translate(-74.633)"/>
+        </svg>
+      </a>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+        target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" aria-hidden="true" class="logo behaviour" viewBox="0 0 256 256">
+          <path fill="#F7DF1E" d="M0 0h256v256H0V0Z"/>
+          <path d="m67.312 213.932 19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576 19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247l-18.732 12.03c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574"/>
+        </svg>        
+      </a>
+      <h1>Hello My Penguins!</h1>
+      <div class="card">
+        <button id="counter" type="button">count is<span id="counter">0</span></button>
+      </div>
+      <p class="read-the-docs">
+        Find the README in this project!
+      </p>
+      <br>
+      <button onclick="myFunction()">Toggle dark mode</button>
+      <a href="page2.html"><button>Page 2</button></a>
+      <br>  
+      <div>
+        <p class="chart-title">What is a Penguins favorite color?</p>
+          <canvas id="myChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
